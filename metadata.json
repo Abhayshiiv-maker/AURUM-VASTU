@@ -1,0 +1,8 @@
+{
+  "name": "Aurum Vastu",
+  "description": "Professional Vastu Shastra consultation for residential and commercial properties by Sahil Kapoor in Faridabad, Haryana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
