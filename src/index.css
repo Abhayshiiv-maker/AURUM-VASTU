@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel", Georgia, serif;
+  --font-serif: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-gold-50: #fbf8ef;
+  --color-gold-100: #f6eedb;
+  --color-gold-200: #ecdcb7;
+  --color-gold-300: #dfc48c;
+  --color-gold-400: #d4af5c;
+  --color-gold-500: #c5a059;
+  --color-gold-600: #b08743;
+  --color-gold-700: #8c6734;
+  --color-gold-800: #71522e;
+  --color-gold-900: #5d4329;
+
+  --color-navy-950: #060b17;
+  --color-navy-900: #0B132B;
+  --color-navy-850: #0f1c3d;
+  --color-navy-800: #142247;
+  --color-navy-700: #1C2D4A;
+  --color-ivory-50: #FAF8F5;
+  --color-ivory-100: #F5EFEB;
+  --color-ivory-200: #EBE2D8;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #f1f5f9;
+    background-color: #0B132B;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom delicate gold border styling */
+.gold-gradient-border {
+  border-image: linear-gradient(135deg, #c5a059 0%, #ecdcb7 50%, #b08743 100%) 1;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #DFB76C 0%, #F5DEB3 30%, #C5A059 70%, #99752D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
